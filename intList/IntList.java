@@ -2,15 +2,15 @@ public class IntList {
     public int first;
     public IntList rest;
 
+    public IntList(int f, IntList r){
+        first = f;
+        rest = r;
+    }
+
     public static void main(String[] args) {
-        IntList l = new IntList();
-        l.first = 5;
-        l.rest = null;
+        IntList l = new IntList(15, null);
+        l = new IntList(10, l)
+        l = new IntList(5, l);
 
-        l.rest = new IntList();
-        l.rest.first = 10;
-        l.rest.rest = new IntList();
-
-        l.rest.rest.first = 15;
     }
 }
